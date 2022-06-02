@@ -9,6 +9,9 @@
    <title>@yield('title')</title>
 </head>
 <body>
+
+<img src="{{ asset('/img/birdy.jpg')}}">
+
    <!-- hier wird auch der Wert von der section "title" eines blade templates ausgefüllt,
    welches dieses layout "extended" -->
    <h1><a href="/messages">@yield('title')</a></h1>

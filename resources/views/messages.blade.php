@@ -45,4 +45,20 @@ ts value for section title to "Mini Twitter" (section content is used in message
 </form>
 <h2>Recent messages:</h2>
 
+
+<button class="btn btn-primary" type="submit">Delete</button>
+
+<ul>
+@foreach ($messages as $message)
+   <li>
+	... ...
+       <span>{{ $message->updated_at->diffForHumans() }}</span>
+       <a href="/message/{{$message->id}}">Edit</a>
+   </li>
+@endforeach
+</ul>
+
+
+
 @endsection
+
