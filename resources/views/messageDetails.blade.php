@@ -21,3 +21,10 @@ section('content')
 
 
 @endsection
+
+<form action="/update/{{$message->id}}" method="post">
+   <input type="text" name="title" value="{{$message->title}}">
+   <input type="text" name="content" value="{{$message->content}}">
+   @csrf
+   <button type="submit">Update</button>
+</form>

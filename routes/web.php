@@ -37,5 +37,6 @@ Route::get('/message/{id}', [MessageController::class, 'details']);
 
 Route::delete('/message/{id}', [MessageController::class, 'delete']);
 
+Route::post('/update/{id}', [MessageController::class, 'update']);
 
  
